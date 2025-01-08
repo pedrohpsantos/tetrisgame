@@ -15,22 +15,18 @@ class Text:
         return n_sin(time * 0.5), n_sin(time * 0.2), n_sin(time * 0.9)
 
     def draw(self):
-        # Centralized title
         title_text = 'TETRIS'
         title_pos = (WIN_W // 2, WIN_H * 0.05)
         self.render_centered_text(title_text, title_pos, TILE_SIZE * 1.5, self.get_color())
 
-        # Next block text
         next_text = 'Next'
         next_pos = (WIN_W * 0.8, WIN_H * 0.25)
         self.render_centered_text(next_text, next_pos, TILE_SIZE * 1.0, 'orange')
 
-        # Score text
         score_label = 'Score'
         score_label_pos = (WIN_W * 0.8, WIN_H * 0.6)
         self.render_centered_text(score_label, score_label_pos, TILE_SIZE * 1.0, 'orange')
 
-        # Current score
         score_value = f'{self.app.tetris.score}'
         score_value_pos = (WIN_W * 0.8, WIN_H * 0.7)
         self.render_centered_text(score_value, score_value_pos, TILE_SIZE * 1.4, 'white')
