@@ -26,7 +26,7 @@ pip install pygame
 ## Como Executar
 1. Clone este repositório:
    ```bash
-   git clone 
+   git clone https://github.com/pedrohpsantos/tetrisgame.git
    ```
 2. Navegue até o diretório do projeto:
    ```bash
@@ -41,7 +41,7 @@ pip install pygame
 - **Seta para esquerda**: Move a peça para a esquerda
 - **Seta para direita**: Move a peça para a direita
 - **Seta para baixo**: Acelera a queda da peça
-- **Barra de espaço**: Rotaciona a peça
+- **Seta para cima**: Rotaciona a peça
 
 ## Melhorias Futuras
 - Adicionar níveis de dificuldade
