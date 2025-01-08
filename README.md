@@ -18,10 +18,9 @@ pip install pygame
 
 ## Estrutura do Projeto
 - **main.py**: Arquivo principal que inicia o jogo.
-- **tetris.py**: Contém a lógica do jogo Tetris.
-- **tetromino.py**: Define as peças e seus comportamentos.
-- **block.py**: Responsável pela representação visual dos blocos.
-- **config.py**: Arquivo com constantes e configurações gerais do jogo.
+- **tetris.py**: Contém a lógica do jogo Tetris e Textos.
+- **tetromino.py**: Define as peças e seus comportamentos e representação visual dos blocos.
+- **settings.py**: Arquivo com constantes e configurações gerais do jogo.
 
 ## Como Executar
 1. Clone este repositório:
