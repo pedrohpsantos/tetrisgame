@@ -1,5 +1,6 @@
 from settings import *
 from tetris import Tetris, Text
+from ranking_manager import RankingManager
 import sys
 import pathlib
 
@@ -15,6 +16,7 @@ class App:
         self.tetris = Tetris(self)
         self.text = Text(self)
         self.game_over = False
+        self.ranking_manager = RankingManager()
 
     def load_images(self):
         files = [item for item in pathlib.Path(SPRITE_DIR_PATH).rglob('*.png') if item.is_file()]
@@ -38,6 +40,11 @@ class App:
         self.screen.blit(text_surface, text_rect)
         pg.display.flip()
         pg.time.wait(3000)
+
+        player_name = input("Digite seu nome para o ranking: ").strip()
+        self.ranking_manager.add_score(player_name, self.tetris.score)
+        self.ranking_manager.display_rankings()
+
         self.restart_game()
 
     def restart_game(self):
@@ -80,5 +87,4 @@ class App:
 
 
 if __name__ == '__main__':
-    app = App()
-    app.run()
+    App().run()
