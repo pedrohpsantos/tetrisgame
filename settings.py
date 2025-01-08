@@ -12,11 +12,10 @@ FONT_PATH = 'assets/font/FREAKSOFNATUREMASSIVE.ttf'
 ANIM_TIME_INTERVAL = 150  # milliseconds
 FAST_ANIM_TIME_INTERVAL = 15
 
-TILE_SIZE = 30  # Diminuído de 50 para 30 para ajustar a escala
+TILE_SIZE = 30  
 FIELD_SIZE = FIELD_W, FIELD_H = 10, 20
 FIELD_RES = FIELD_W * TILE_SIZE, FIELD_H * TILE_SIZE
 
-# Escalas ajustadas para uma janela menor
 FIELD_SCALE_W, FIELD_SCALE_H = 1.5, 1.0
 WIN_RES = WIN_W, WIN_H = int(FIELD_RES[0] * FIELD_SCALE_W), int(FIELD_RES[1] * FIELD_SCALE_H)
 
