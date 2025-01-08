@@ -1,7 +1,6 @@
 from settings import *
 import random
 
-
 class Block(pg.sprite.Sprite):
     def __init__(self, tetromino, pos):
         self.tetromino = tetromino
@@ -92,3 +91,4 @@ class Tetromino:
 
     def update(self):
         self.move(direction='down')
+        
