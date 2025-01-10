@@ -45,7 +45,6 @@ pip install pygame
 ## Melhorias Futuras
 - Adicionar níveis de dificuldade
 - Implementar uma interface para escolher skins de peças
-- Ranking de pontuação
 - Som e efeitos visuais adicionais
 
 ## Contribuição
