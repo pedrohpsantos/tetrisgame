@@ -15,32 +15,32 @@ class Text:
         return n_sin(time * 0.5), n_sin(time * 0.2), n_sin(time * 0.9)
 
     def draw(self):
-        # Texto de título (TETRIS no centro superior)
+        # Texto de título
         title_text = 'TETRIS'
-        title_pos = (WIN_W // 2, WIN_H * 0.05)
+        title_pos = (WIN_W // 1.2, WIN_H * 0.05)
         self.render_centered_text(title_text, title_pos, TILE_SIZE * 1.2, self.get_color())
 
         # Pontuação atual
         score_label = 'Score'
-        score_label_pos = (WIN_W * 0.8, WIN_H * 0.05)
+        score_label_pos = (WIN_W * 0.85, WIN_H * 0.2)
         self.render_centered_text(score_label, score_label_pos, TILE_SIZE * 0.6, 'orange')
 
         score_value = f'{self.app.tetris.score}'
-        score_value_pos = (WIN_W * 0.8, WIN_H * 0.1)
+        score_value_pos = (WIN_W * 0.85, WIN_H * 0.25)
         self.render_centered_text(score_value, score_value_pos, TILE_SIZE * 0.9, 'white')
 
         # Maior pontuação (High Score)
         high_score_label = 'High Score'
-        high_score_label_pos = (WIN_W * 0.8, WIN_H * 0.15)
+        high_score_label_pos = (WIN_W * 0.85, WIN_H * 0.4)
         self.render_centered_text(high_score_label, high_score_label_pos, TILE_SIZE * 0.6, 'orange')
 
         high_score_value = self.get_high_score()
-        high_score_value_pos = (WIN_W * 0.8, WIN_H * 0.2)
+        high_score_value_pos = (WIN_W * 0.85, WIN_H * 0.45)
         self.render_centered_text(high_score_value, high_score_value_pos, TILE_SIZE * 0.9, 'white')
 
         # Próximo Tetromino
         next_text = 'Next'
-        next_pos = (WIN_W * 0.8, WIN_H * 0.3)
+        next_pos = (WIN_W * 0.85, WIN_H * 0.6)
         self.render_centered_text(next_text, next_pos, TILE_SIZE * 0.7, 'orange')
 
     def get_high_score(self):
